@@ -21,7 +21,6 @@
 title: Victor Silva
 email: victor@victorfts.com
 description: A developer who loves programming and building scalable solutions.
-baseurl: "/docs" # the subpath of your site, e.g. /blog
 url: "https://victorfts.com"
 github_username:  victorl2
 
