@@ -31,25 +31,6 @@ If you do any kind of java/kotlin develpment, this is a must have to manage your
 curl -s "https://get.sdkman.io" | bash
 ```
 
-### General Apps
-
-installing basic apps/tools
-```bash
-brew install --cask \
-    gh
-    bitwarden \
-    google-chrome  \
-    firefox \
-    tor \
-    iterm2 \
-    visual-studio-code \
-    docker \
-    slack \
-    rectangle \
-    figma \  
-    discord \
-    vlc
-```
 
 ### Oh My Zsh
 Install Oh My Zsh
@@ -110,5 +91,59 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 ```
 
+### Programming languages
+
+Go
+```bash
+brew install go
+```
+
+C/C++
+```bash
+brew install gcc
+```
+
+Python _( i need to get around to use pyenv to manage versions)_
+```bash
+brew install python
+```
+
+Java 21
+```bash
+sdk install java 21.0.1-amzn
+```
+
+Kotlin 1.9
+```bash
+sdk install kotlin 1.9.21
+```
+
+Ruby _( only for some static page generation, not really used )_
+```bash
+brew install ruby
+echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc
+```
+
+### General Apps
+installing basic apps/tools
+```bash
+brew install --cask \
+    gh
+    bitwarden \
+    google-chrome  \
+    firefox \
+    tor \
+    iterm2 \
+    visual-studio-code \
+    docker \
+    slack \
+    rectangle \
+    figma \  
+    discord \
+    vlc
+```
+
 ### VSCODE
 Go to vscode and import the profile `victorl2` with the shortcut `⌘ + P` and `>profile: import profile` from this [github gist](https://gist.github.com/victorl2/d473de94d86e2ea2aafcc26a0353fcc3)
+
+

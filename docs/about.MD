@@ -3,15 +3,9 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+My name is Victor Ferreira Teixeira da Silva, I am from Niterói/RJ, Brazil. I am a software developer, graduated in computer science from Federal University Fluminense (UFF). I have been working in software development since 2016.
 
 
-[jekyll-organization]: https://github.com/jekyll
+## Social 
++ Github: [github.com/victorl2](https://github.com/victorl2)
++ Linkedin: [linkedin.com/in/victorfts/](https://www.linkedin.com/in/victorfts/)
