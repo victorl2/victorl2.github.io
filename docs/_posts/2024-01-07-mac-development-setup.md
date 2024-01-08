@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "My Mac Development Setup"
+title: My Mac Development Setup
 permalink: /my-mac-development-setup-2024/
 date:   2024-01-07 13:50:00 -0300
-categories: mac dev-environment
+categories: ["mac", "dev-environment"]
+tags: ["mac", "dev-environment"]
 ---
 
 In 2016 I had my first experience working with a mac, it still had the [infamous touch bar](https://www.reddit.com/r/apple/comments/utkr3o/why_do_people_hate_the_touchbar/), but i was wonderstruck with how nice to use the system was, I always liked linux, but felt that the "user experience" was lacking, even for developers _( we also can have nice things)_. At that time i was not willing to pay for a mac, but then i got a job that provided me with one, i was hooked. Now as a proud owner of a [macbook pro M1](https://support.apple.com/kb/SP858?locale=en_US), i decided to write down my setup, so i can easily replicate it in the future (and if anyone else is interested on it).
@@ -118,10 +119,13 @@ Kotlin 1.9
 sdk install kotlin 1.9.21
 ```
 
-Ruby _( only for some static page generation, not really used )_
+Ruby _( only for [static site generation](https://jekyllrb.com/), not really used )_
 ```bash
 brew install ruby
 echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+gem install bundler:2.3.26
+gem update 
 ```
 
 ### General Apps
@@ -141,6 +145,14 @@ brew install --cask \
     figma \  
     discord \
     vlc
+```
+
+### Git
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "you@your-domain.com"
+git config --global init.defaultBranch main
 ```
 
 ### VSCODE
