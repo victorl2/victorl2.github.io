@@ -174,13 +174,13 @@ strong, b {
   align-items: center;
   justify-content: space-between;
   height: 60px;
-  max-width: 960px !important;
 }
 
 .header-right {
   display: flex;
   align-items: center;
   gap: 1.25rem;
+  margin-right: -110px;
 }
 
 .site-title {
