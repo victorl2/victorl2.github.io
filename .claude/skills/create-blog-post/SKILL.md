@@ -48,6 +48,7 @@ Follow these writing rules strictly:
 - **Include reference links**: Link to official docs, tools, repos, and resources mentioned in the post. Use inline markdown links naturally within sentences.
 - **Include contextual images**: Search for relevant free-to-use images online (Unsplash, official project logos, screenshots). Place images where they add context, not as decoration. Store in `docs/assets/imgs/` and reference as `![alt text](/assets/imgs/filename.ext)`.
 - **Avoid AI writing patterns**: No "In this article, we will explore...", no "Let's dive in", no "In conclusion", no excessive transitional phrases. Just get to the point.
+- **Opinionated and direct**: Write with conviction. State opinions as opinions, not as apologies. Never use hedging phrases like "in my humble opinion", "I might be wrong but", "I think maybe", or "it could be argued that". If you believe something, say it plainly. The reader can disagree on their own. No excuses, no softening, no asking for permission to have a take.
 - **Paragraphs over structure**: Don't break everything into H2/H3 sections. Use headings only when there's a genuine topic shift. A post can have large sections of continuous prose.
 
 ### 4. Review with the User
@@ -86,3 +87,4 @@ Before writing the file, do a self-review cleanup of the approved draft:
 - Adding filler intros ("In this post, I'll show you...") instead of jumping into the content
 - Forgetting reference links to tools and resources mentioned
 - Using stock headings like "Introduction", "Conclusion", "Summary"
+- Hedging opinions with weak language ("in my humble opinion", "I think perhaps", "it seems like maybe") instead of stating them directly

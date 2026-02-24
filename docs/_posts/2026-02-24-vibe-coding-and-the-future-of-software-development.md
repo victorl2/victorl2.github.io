@@ -9,7 +9,7 @@ tags: ["vibe-coding", "ai", "developer-productivity", "career"]
 
 The term "vibe coding" has been floating around developer circles for a while now. Coined by [Andrej Karpathy](https://x.com/karpathy/status/1886192184808149383) in early 2025, it describes the practice of writing software almost entirely through natural language prompts to AI tools, where you "fully give in to the vibes" and let the LLM generate the code. You describe what you want, the AI produces it, you run it, and if something breaks, you paste the error back and ask it to fix it. The code itself becomes secondary to the intent.
 
-It sounds radical if you frame it as a departure from "real programming." But I think that framing misses the point entirely.
+It sounds radical if you frame it as a departure from "real programming." That framing misses the point entirely.
 
 ## What vibe coding actually is
 
@@ -51,7 +51,7 @@ Architecture and system design become more valuable as well. AI is remarkably go
 
 ## The junior engineer problem
 
-There is one aspect of this shift that genuinely concerns me. For senior developers, AI-assisted development is often a positive multiplier. you already have the mental models, the debugging instincts, the understanding of why things break. You can evaluate what the AI gives you and course correct when it is wrong. But for junior engineers, it is a double edged sword.
+There is one aspect of this shift that concerns me. For senior developers, AI-assisted development is a multiplier. You already have the mental models, the debugging instincts, the understanding of why things break. You can evaluate what the AI gives you and course correct when it is wrong. But for junior engineers, it is a double edged sword.
 
 You do not develop deep software development skills at the same pace when AI is writing most of your code. There is something irreplaceable about going from zero to one by yourself. Reading the docs, hitting a wall, stepping through the debugger, finally understanding why that null pointer keeps showing up. That struggle is where the real learning happens. When the AI just hands you the answer, you might ship faster, but you skip the part where the knowledge actually sticks.
 
@@ -67,7 +67,7 @@ Is software engineering over? No. But the pace companies demand has changed. Ite
 
 And this is no longer a matter of personal preference. Companies are starting to measure and expect AI usage as part of how developers work. [Shopify's CEO Tobi Lütke](https://www.businesstoday.in/technology/news/story/ai-use-is-no-longer-optional-at-shopify-declares-ceo-tobi-lutke-in-internal-memo-471211-2025-04-08) declared in an internal memo that "reflexive AI usage is now a baseline expectation," with AI competency becoming part of performance reviews and hiring decisions. [Coinbase's CEO Brian Armstrong](https://techcrunch.com/2025/08/22/coinbase-ceo-explains-why-he-fired-engineers-who-didnt-try-ai-immediately/) went further and fired engineers who refused to adopt AI tools after giving them a week to onboard. Companies are even tying [AI adoption metrics to executive compensation](https://www.equilar.com/blogs/620-ai-as-a-performance-metric.html). This is quickly becoming the reality of corporate software development "ways of work," not something up for discussion.
 
-A side note on the layoffs: the massive waves of tech layoffs happening right now are largely not caused by AI replacing developers. Most of these cuts stem from over-hiring during the pandemic boom, rising interest rates, and pressure from investors to improve margins. But AI makes for a convenient narrative. Saying "we are investing in AI efficiency" sounds a lot better in a press release than "we hired too many people and need to correct course." It is worth keeping that distinction clear, because conflating the two feeds unnecessary panic about the profession disappearing when the reality is far more mundane.
+A side note on the layoffs: the massive waves of tech layoffs happening right now are not caused by AI replacing developers. These cuts stem from over-hiring during the pandemic boom, rising interest rates, and pressure from investors to improve margins. But AI makes for a convenient narrative. Saying "we are investing in AI efficiency" sounds a lot better in a press release than "we hired too many people and need to correct course." Keep that distinction clear. Conflating the two feeds unnecessary panic about the profession disappearing when the reality is far more mundane.
 
 That said, we should not throw the baby out with the bathwater. The fundamentals, understanding systems, writing clean interfaces, reasoning about failure modes, knowing how to debug, are what make AI-assisted development actually work. Without them, you are just generating code you cannot evaluate. The tooling is only as good as the person directing it.
 
