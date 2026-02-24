@@ -44,7 +44,7 @@ Follow these writing rules strictly:
   - *Semi-formal*: Clear, approachable, and well-structured. First person is fine but keep the language more polished. Less slang, more precision.
   - *Rigorous*: Precise and well-cited. Use technical terminology correctly, reference sources explicitly, and maintain a structured argument. Can still use first person but the tone should be measured and deliberate.
 - **No overuse of lists or bullet points**: Prefer flowing paragraphs. Use lists only when genuinely listing items (tools, steps in a sequence). Never use bullets just to organize prose.
-- **No dashes as separators**: Avoid using " - " as a stylistic separator in prose.
+- **IMPORTANT: No dashes anywhere in the post content**: NEVER use `-` or `--` as separators, em dashes, or stylistic punctuation in prose. Use commas, periods, semicolons, or restructure the sentence instead. This applies to all post content (not to front matter, URLs, or markdown syntax).
 - **Include reference links**: Link to official docs, tools, repos, and resources mentioned in the post. Use inline markdown links naturally within sentences.
 - **Include contextual images**: Search for relevant free-to-use images online (Unsplash, official project logos, screenshots). Place images where they add context, not as decoration. Store in `docs/assets/imgs/` and reference as `![alt text](/assets/imgs/filename.ext)`.
 - **Avoid AI writing patterns**: No "In this article, we will explore...", no "Let's dive in", no "In conclusion", no excessive transitional phrases. Just get to the point.
@@ -69,7 +69,7 @@ Before writing the file, do a self-review cleanup of the approved draft:
 - Fix awkward phrasing, redundant sentences, and unnecessary repetition
 - Verify all markdown links are correctly formatted and point to real URLs
 - Ensure the tone is consistent throughout (no sudden shifts between casual and formal)
-- Check that the post flows naturally when read top to bottom -- no jarring jumps between paragraphs
+- Check that the post flows naturally when read top to bottom, no jarring jumps between paragraphs
 - Trim any section that feels like padding without adding value
 - Confirm the word count is within the target range
 
