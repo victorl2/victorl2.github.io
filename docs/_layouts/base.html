@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: "en" }}" data-theme="dark">
 
   {%- include head.html -%}
 
@@ -14,6 +14,19 @@
     </main>
 
     {%- include footer.html -%}
+
+    <script>
+      document.getElementById('theme-toggle').addEventListener('click', function() {
+        document.documentElement.classList.add('theme-transition');
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        setTimeout(function() {
+          document.documentElement.classList.remove('theme-transition');
+        }, 350);
+      });
+    </script>
 
   </body>
 
