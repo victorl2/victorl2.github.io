@@ -38,7 +38,7 @@ public class SmsNotificationService implements NotificationService { }
 public class PushNotificationService implements NotificationService { }
 ```
 
-This is core Spring. You can use `@Qualifier`, `@Primary`, or inject a `List<NotificationService>` and select by type. It is one of the first things you learn when working with dependency injection, and it comes up constantly in real codebases. Several candidates with years of Spring experience could not articulate any of these options clearly.
+This is core Spring. You can use `@Qualifier`, `@Primary`, or inject a `List<NotificationService>` and select by type. It is one of the first things you learn when working with dependency injection, and it comes up constantly in real codebases. If a candidate told me there was an annotation you could use to specify which implementation gets injected and explained what it would do, even without remembering the exact name or where to place it, that was a pass in my book. Several candidates with years of Spring experience could not get even that far.
 
 A different concurrency question described an IO bound operation that needed to run in parallel. Given a list of values and a heavy processing function:
 
