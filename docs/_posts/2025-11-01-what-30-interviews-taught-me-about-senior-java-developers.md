@@ -13,7 +13,7 @@ I used the same set of 10 questions for every candidate. These were not algorith
 
 Out of those 30 candidates, four passed.
 
-That number kept nagging at me. Not because the bar was unusually high, but because the questions were genuinely straightforward. And yet, candidate after candidate stumbled on the basics.
+That number kept nagging at me. Not because the bar was unusually high, but because the questions were genuinely straightforward. And yet, candidate after candidate stumbled on the basics. Worth noting: the hiring process had three stages. An initial HR screening, then my technical round, then a final interview with my boss. So these 30 candidates had already been filtered once before reaching me. The ones who passed my round still had to face my boss, who was considerably more strict with the depth of knowledge he expected. My round was supposed to be the easy one.
 
 ## What the questions looked like
 
