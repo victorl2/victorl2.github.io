@@ -7,7 +7,7 @@ categories: ["career", "software-engineering"]
 tags: ["interviews", "java", "fundamentals", "hiring"]
 ---
 
-Over the past few months, I conducted 30 technical screening interviews for a Senior Java Developer position. The role was not exotic. It required solid Java fundamentals, reasonable concurrency knowledge, and the ability to reason about everyday backend problems. Standard expectations for someone with "senior" in their title.
+Over the past few months, I conducted 30 technical screening interviews for a Senior Java Developer position. The candidates came from all over: Canada, the US, Mexico, Brazil, and several countries across Europe. The role was not exotic. It required solid Java fundamentals, reasonable concurrency knowledge, and the ability to reason about everyday backend problems. Standard expectations for someone with "senior" in their title.
 
 I used the same set of 10 questions for every candidate. These were not algorithmic puzzles or whiteboard brain teasers. No one was asked to invert a binary tree or implement Dijkstra's algorithm. Every question was a foundational probe: a real scenario you would encounter in production backend work, designed to reveal whether the candidate actually understands the tools and patterns they claim to use daily. Spring dependency injection, thread safety, Kafka delivery guarantees, basic SQL. The kind of knowledge that should be second nature after a few years of building Java services.
 
@@ -43,20 +43,28 @@ This is core Spring. You can use `@Qualifier`, `@Primary`, or inject a `List<Not
 A different concurrency question described an IO bound operation that needed to run in parallel. Given a list of values and a heavy processing function:
 
 ```java
-List<InputValue> values;
+
 Result processValue(InputValue value); // IO-bound, slow operation
+
+public List<Result> doWork(List<InputValue> values){
+    //TODO: complete the function
+}
 ```
 
 The task: process all values concurrently and return the results in the same order as the input, without sorting afterward. We explicitly stated the function was IO bound, not CPU bound, which is why running everything at once makes sense here. The clean solution looks something like this:
 
 ```java
-List<CompletableFuture<Result>> futures = values.stream()
-    .map(v -> CompletableFuture.supplyAsync(() -> processValue(v), executor))
-    .toList();
+public List<Result> doWork(List<InputValue> values){
+    List<CompletableFuture<Result>> futures = values.stream()
+        .map(v -> CompletableFuture.supplyAsync(() -> processValue(v), executor))
+        .toList();
 
-List<Result> results = futures.stream()
-    .map(CompletableFuture::join)
-    .toList();
+    List<Result> results = futures.stream()
+        .map(CompletableFuture::join)
+        .toList();
+    
+    return results;
+}
 ```
 
 The key insight is twofold. First, you fire off all the futures before waiting on any of them, so the IO operations run concurrently. Second, because you collect the futures in a list that mirrors the input order, calling `join()` sequentially on that list naturally preserves the ordering with no sorting required. The candidate needed to demonstrate awareness of [CompletableFuture](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html), thread pools via an `ExecutorService`, and the fundamental idea that futures represent handles to work that is already in progress. Candidates who listed "multithreading" as a skill on their resume often could not sketch even a basic approach using these standard tools.
