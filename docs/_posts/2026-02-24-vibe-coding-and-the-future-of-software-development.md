@@ -79,7 +79,7 @@ A side note on the layoffs: the massive waves of tech layoffs happening right no
 
 That said, we should not throw the baby out with the bathwater.
 
-![Don't throw the baby out with the bathwater](/assets/imgs/throw-away-bath-water.jpg)
+<img src="/assets/imgs/throw-away-bath-water.jpg" alt="Don't throw the baby out with the bathwater" style="max-width: 50%; display: block; margin: 0 auto;" />
 
 The fundamentals, understanding systems, writing clean interfaces, reasoning about failure modes, knowing how to debug, are what make AI-assisted development actually work. Without them, you are just generating code you cannot evaluate. The tooling is only as good as the person directing it.
 
