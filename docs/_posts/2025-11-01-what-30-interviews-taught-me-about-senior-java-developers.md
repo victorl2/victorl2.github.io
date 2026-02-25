@@ -89,7 +89,7 @@ This compounds over time. If you spend years building Spring Boot services witho
 
 ## What this means if you are preparing for interviews
 
-If you are a developer targeting senior level roles, the single most impactful thing you can do is go back to fundamentals. Not LeetCode grinding, not memorizing design pattern names, but genuinely understanding the platform you work on.
+If you are a developer targeting senior level roles, the single most impactful thing you can do is go back to fundamentals. Not LeetCode grinding, not memorizing design pattern names, but genuinely understanding the platform you work on. And make an effort to understand what the position actually requires. If the job description lists Spring, Java, and Kafka, you can reasonably expect to be quizzed on those. Read the posting carefully, identify the core technologies, and prepare accordingly. This sounds obvious, but the number of candidates who showed up unprepared for the exact stack mentioned in the listing was staggering.
 
 For Java specifically, that means being comfortable with the [concurrency utilities](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/package-summary.html), understanding Spring's dependency injection beyond just slapping `@Autowired` on everything, knowing how your message broker handles failures and redelivery, and being able to write SQL that goes beyond simple SELECT statements. Read [Effective Java](https://www.oreilly.com/library/view/effective-java-3rd/9780134686097/) by Joshua Bloch if you haven't. Understand [Kafka's delivery semantics](https://kafka.apache.org/documentation/#semantics) if you list it on your resume.
 
