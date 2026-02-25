@@ -2,7 +2,7 @@
 layout: post
 title: "TradeOptimizer: Using Evolutionary Algorithms to Trade Crypto"
 permalink: /trade-optimizer/
-date: 2025-03-10 10:00:00 -0300
+date: 2024-02-10 10:00:00 -0300
 categories: ["projects", "algorithms"]
 tags: ["rust", "brkga", "algorithmic-trading", "crypto", "metaheuristics"]
 ---
