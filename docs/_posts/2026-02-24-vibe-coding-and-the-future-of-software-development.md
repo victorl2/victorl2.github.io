@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Vibe Coding and the Developer's Constant: Adaptation"
+title: "Vibe Coding and the Need to Adapt"
 permalink: /vibe-coding/
 date: 2026-02-24 14:00:00 -0300
 categories: ["career", "software-engineering"]
