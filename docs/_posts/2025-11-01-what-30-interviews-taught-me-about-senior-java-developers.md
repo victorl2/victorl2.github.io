@@ -97,9 +97,9 @@ The broader principle applies regardless of your stack. Frameworks come and go. 
 
 ## What this means if you run interviews
 
-One takeaway from this experience is that simple foundational questions are remarkably effective filters. You do not need a six hour take home assignment or a gauntlet of system design rounds to assess whether someone has genuine depth. A consistent set of well chosen questions about language fundamentals, concurrency, and everyday backend patterns will tell you more about a candidate's actual competence than any amount of resume screening.
+The biggest lesson here is that practical, role-specific questions reveal what algorithmic interviews cannot. A candidate can pass a LeetCode medium and still have no idea how to coordinate threads, handle message redelivery, or wire up dependency injection in the framework your team actually uses. Those are not theoretical gaps. They are gaps that will show up on the first week of real work.
 
-The flip side is that this only works if the interviewer deeply understands the material. You need to recognize when a candidate is giving a plausible sounding answer versus a correct one, and you need to be comfortable exploring follow up questions when the initial response is vague. The screening process is only as strong as the screener.
+If you are hiring a Senior Java Developer to work on a concurrent, Kafka-driven system, your interview should reflect that. If you are hiring a Senior Rust Developer, you would expect them to know their way around [Tokio](https://tokio.rs/) and async runtimes. If it is a Senior Go position, they should be able to reason about goroutines and channels without hesitation. The point is not to quiz people on trivia. It is to verify that the person you are about to embed in your team can actually operate in the environment they are being hired for. Tailoring your questions to your actual stack and codebase is a far better signal than any generic coding challenge.
 
 ## The uncomfortable truth
 
