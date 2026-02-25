@@ -1,0 +1,29 @@
+name: Notify search engines
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/_posts/**"
+      - "docs/_pages/**"
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2 # need previous commit for diff
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install cryptography
+
+      - name: Notify search engines
+        run: python scripts/notify_search_engines.py
+        env:
+          GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
