@@ -77,6 +77,10 @@ And this is no longer a matter of personal preference. Companies are starting to
 
 A side note on the layoffs: the massive waves of tech layoffs happening right now are not caused by AI replacing developers. These cuts stem from over-hiring during the pandemic boom, rising interest rates, and pressure from investors to improve margins. But AI makes for a convenient narrative. Saying "we are investing in AI efficiency" sounds a lot better in a press release than "we hired too many people and need to correct course." Keep that distinction clear. Conflating the two feeds unnecessary panic about the profession disappearing when the reality is far more mundane.
 
-That said, we should not throw the baby out with the bathwater. The fundamentals, understanding systems, writing clean interfaces, reasoning about failure modes, knowing how to debug, are what make AI-assisted development actually work. Without them, you are just generating code you cannot evaluate. The tooling is only as good as the person directing it.
+That said, we should not throw the baby out with the bathwater.
+
+![Don't throw the baby out with the bathwater](/assets/imgs/throw-away-bath-water.jpg)
+
+The fundamentals, understanding systems, writing clean interfaces, reasoning about failure modes, knowing how to debug, are what make AI-assisted development actually work. Without them, you are just generating code you cannot evaluate. The tooling is only as good as the person directing it.
 
 The real question is not whether vibe coding is "legitimate" programming. It is whether you are willing to adapt, the way you always have. New tools, new constraints, new ways of working. The constant is not the tool. It is the developer's ability to learn, adjust, and keep building.
