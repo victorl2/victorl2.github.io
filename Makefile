@@ -1,2 +1,2 @@
-run: 
-	cd docs/ && bundle exec jekyll serve
+run:
+	docker compose up --build

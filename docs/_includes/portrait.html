@@ -1,0 +1,175 @@
+<div class="portrait-wrapper">
+  <svg class="portrait-svg" viewBox="0 0 300 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Face outline -->
+    <path class="draw face" d="M102,88 C88,108 80,136 78,164 C76,192 79,220 87,242 C96,262 116,278 138,286 C146,289 154,289 162,286 C184,278 204,262 213,242 C221,220 224,192 222,164 C220,136 212,108 198,88"/>
+
+    <!-- Hair (short, close-cropped) -->
+    <path class="draw hair" d="M102,88 C98,76 106,62 130,52 C148,44 168,43 182,48 C198,55 208,66 209,78 C210,84 206,88 198,88"/>
+    <path class="draw hair-detail" d="M120,58 C140,52 164,51 184,56"/>
+    <path class="draw hair-detail" d="M112,68 C132,62 160,60 180,65"/>
+    <path class="draw hair" d="M102,88 C94,95 86,108 82,126"/>
+    <path class="draw hair" d="M198,88 C206,95 214,108 218,126"/>
+
+    <!-- Ears -->
+    <path class="draw face" d="M78,158 C72,160 68,170 70,180 C72,190 76,194 80,192"/>
+    <path class="draw face" d="M222,158 C228,160 232,170 230,180 C228,190 224,194 220,192"/>
+
+    <!-- Eyebrows -->
+    <path class="draw brows" d="M93,140 C104,133 128,131 148,136"/>
+    <path class="draw brows" d="M156,136 C176,131 200,133 211,140"/>
+
+    <!-- Glasses -->
+    <path class="draw glasses" d="M93,149 L144,149 Q150,149 150,155 L150,182 Q150,188 144,188 L93,188 Q87,188 87,182 L87,155 Q87,149 93,149 Z"/>
+    <path class="draw glasses" d="M160,149 L211,149 Q217,149 217,155 L217,182 Q217,188 211,188 L160,188 Q154,188 154,182 L154,155 Q154,149 160,149 Z"/>
+    <path class="draw glasses" d="M150,164 C150,159 154,159 154,164"/>
+    <path class="draw glasses" d="M87,163 L76,160"/>
+    <path class="draw glasses" d="M217,163 L228,160"/>
+
+    <!-- Eyes -->
+    <path class="draw eyes" d="M104,170 C108,162 122,159 133,164 C139,168 137,176 128,178 C118,180 105,175 104,170"/>
+    <path class="draw eyes" d="M171,170 C175,162 189,159 199,164 C205,168 203,176 194,178 C184,180 172,175 171,170"/>
+
+    <!-- Pupils -->
+    <circle class="pupil" cx="120" cy="170" r="4"/>
+    <circle class="pupil" cx="188" cy="170" r="4"/>
+
+    <!-- Nose -->
+    <path class="draw nose" d="M152,186 C150,198 146,208 143,214 C147,218 154,220 160,216"/>
+
+    <!-- Mouth -->
+    <path class="draw mouth" d="M126,240 C136,246 146,249 152,249 C158,249 168,246 178,240"/>
+
+    <!-- Goatee -->
+    <path class="draw goatee" d="M142,254 C145,264 148,272 150,276"/>
+    <path class="draw goatee" d="M162,254 C159,264 156,272 154,276"/>
+    <path class="draw goatee" d="M146,250 L158,250"/>
+
+    <!-- Neck -->
+    <path class="draw neck" d="M136,288 L132,320"/>
+    <path class="draw neck" d="M168,288 L172,320"/>
+
+    <!-- Shirt neckline -->
+    <path class="draw shirt" d="M132,320 C138,336 146,344 152,346 C158,344 166,336 172,320"/>
+    <!-- Shirt shoulders -->
+    <path class="draw shirt" d="M132,320 C126,328 114,338 94,348 C78,356 56,364 36,370"/>
+    <path class="draw shirt" d="M172,320 C178,328 190,338 210,348 C226,356 248,364 268,370"/>
+    <!-- Backpack strap -->
+    <path class="draw shirt" d="M90,350 C84,340 78,328 74,314"/>
+  </svg>
+
+  <noscript>
+    <style>
+      .portrait-svg .draw { stroke-dasharray: none !important; stroke-dashoffset: 0 !important; }
+      .portrait-svg .pupil { opacity: 1 !important; }
+    </style>
+  </noscript>
+</div>
+
+<style>
+  .portrait-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 2.5rem;
+    max-width: 240px;
+  }
+
+  .portrait-svg {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+  }
+
+  .portrait-svg .draw {
+    stroke: var(--accent);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+    fill: none;
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+  }
+
+  .portrait-svg .draw.face,
+  .portrait-svg .draw.hair {
+    stroke-width: 2.5;
+  }
+
+  .portrait-svg .draw.hair-detail,
+  .portrait-svg .draw.goatee {
+    stroke-width: 1.5;
+  }
+
+  .portrait-svg .pupil {
+    fill: var(--accent);
+    opacity: 0;
+  }
+
+  @keyframes drawLine {
+    to { stroke-dashoffset: 0; }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .portrait-svg .draw {
+      stroke-dasharray: none !important;
+      stroke-dashoffset: 0 !important;
+      animation: none !important;
+    }
+    .portrait-svg .pupil {
+      opacity: 1 !important;
+      animation: none !important;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var svg = document.querySelector('.portrait-svg');
+    if (!svg) return;
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      svg.querySelectorAll('.draw').forEach(function(el) {
+        el.style.strokeDasharray = 'none';
+        el.style.strokeDashoffset = '0';
+      });
+      svg.querySelectorAll('.pupil').forEach(function(el) {
+        el.style.opacity = '1';
+      });
+      return;
+    }
+
+    var delays = {
+      face: 0.3, hair: 0.6, 'hair-detail': 1.0, brows: 1.4,
+      glasses: 1.6, eyes: 2.2, nose: 2.4, mouth: 2.8,
+      goatee: 3.0, neck: 3.2, shirt: 3.4
+    };
+
+    var durations = {
+      face: 2.0, hair: 1.2, 'hair-detail': 0.6, brows: 0.5,
+      glasses: 1.0, eyes: 0.7, nose: 0.7, mouth: 0.5,
+      goatee: 0.4, neck: 0.4, shirt: 0.8
+    };
+
+    svg.querySelectorAll('.draw').forEach(function(el) {
+      try {
+        var length = el.getTotalLength();
+        el.style.strokeDasharray = length;
+        el.style.strokeDashoffset = length;
+      } catch(e) {}
+
+      var feature = Array.from(el.classList).find(function(c) { return c !== 'draw'; });
+      var delay = delays[feature] || 0;
+      var duration = durations[feature] || 1;
+
+      el.style.animation = 'drawLine ' + duration + 's ease ' + delay + 's forwards';
+    });
+
+    svg.querySelectorAll('.pupil').forEach(function(el) {
+      el.style.animation = 'fadeIn 0.5s ease 2.7s forwards';
+    });
+  });
+</script>

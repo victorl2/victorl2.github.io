@@ -11,11 +11,6 @@ Personal blog/portfolio for Victor Silva (victorfts.com), built with Jekyll and 
 ```bash
 # Run local development server (http://localhost:4000)
 make run
-# Or equivalently:
-cd docs/ && bundle exec jekyll serve
-
-# Install dependencies (first-time setup)
-cd docs/ && bundle install
 ```
 
 ## Architecture
