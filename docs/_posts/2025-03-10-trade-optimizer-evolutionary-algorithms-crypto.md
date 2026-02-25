@@ -13,6 +13,8 @@ A paper that was a big inspiration for this work was ["Optimization of the tradi
 
 The full paper is available (in Portuguese): [TradeOptimizer: Operando no mercado de criptoativos com BRKGA (PDF)](https://app.uff.br/riuff/bitstream/handle/1/25787/VICTOR%20FERREIRA%20TEIXEIRA%20TradeOptimizer__Operando_no_mercado_de_criptoativos_com_BRKGA.pdf?sequence=1&isAllowed=y).
 
+What started as a graduation thesis eventually became an officially published article. I presented the work at [SBPO 2022](https://proceedings.science/sbpo/sbpo-2022/trabalhos/aplicacao-de-algoritmos-de-otimizacao-evolucionaria-para-trading-de-criptomoedas?lang=pt-br) (Simpósio Brasileiro de Pesquisa Operacional), the Brazilian Symposium on Operations Research, one of the main conferences for optimization and operations research in Brazil.
+
 ## The idea
 
 The core question was simple: can we describe a trading strategy as a set of numerical parameters and then use an optimization algorithm to find the best combination of those parameters? Instead of manually tweaking indicator thresholds and hoping for the best, I wanted the algorithm to explore that space systematically.
