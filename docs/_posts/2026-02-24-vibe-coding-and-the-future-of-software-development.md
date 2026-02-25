@@ -15,7 +15,7 @@ It sounds radical if you frame it as a departure from "real programming." That f
 
 Vibe coding is not a methodology or a framework. It is a way of working. You sit down with a tool like [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview), [Cursor](https://www.cursor.com/), or [GitHub Copilot](https://github.com/features/copilot), and instead of writing every line yourself, you describe behavior at a higher level and let the model translate that into implementation. Sometimes you review the output carefully. Sometimes you don't. You just check if it works.
 
-That last part is what makes people uncomfortable. The idea that a professional developer would ship code they didn't fully read or understand feels wrong. And in many contexts, it is wrong. You wouldn't vibe code a payment processing system or a security-critical authentication flow. But let me tell you a secret, not all production code is mission critical, and vibe coding works surprisingly well most of the time.
+That last part is what makes people uncomfortable. The idea that a professional developer would ship code they didn't fully read or understand feels wrong. And in many contexts, it is wrong. You wouldn't vibe code a payment processing system or a security-critical authentication flow without carefully reviewing the code. But let me tell you a secret, not all production code is mission critical, and vibe coding works surprisingly well most of the time.
 
 The important distinction is that vibe coding is not about abandoning understanding. It is about choosing where to invest your attention. A senior developer vibe coding a CRUD endpoint is making a conscious tradeoff. They know what the code should look like, they can spot when it is wrong, and they are saving time on the parts that are mechanical.
 
@@ -55,7 +55,7 @@ Debugging is a good example. When you vibe code something and it breaks, you sti
 
 Architecture and system design become more valuable as well. AI is remarkably good at generating local solutions, a function here, a component there. It is much less reliable at making coherent decisions across an entire system. Knowing how to structure a codebase, manage dependencies, and make tradeoffs that hold up over time is still a fundamentally human skill.
 
-## The Learning problem
+## The learning problem
 
 There is one aspect of this shift that concerns me. For most senior developers, AI-assisted development is a positive multiplier. You already have the mental models, the debugging instincts, the understanding of why things break. You can evaluate what the AI gives you and course correct when it is wrong. But for junior engineers, it is a double edged sword.
 
@@ -75,12 +75,14 @@ Take code review for example, it has never been the most glamorous part of the j
 
 And this is no longer a matter of personal preference. Companies are starting to measure and expect AI usage as part of how developers work. [Shopify's CEO Tobi Lütke](https://www.businesstoday.in/technology/news/story/ai-use-is-no-longer-optional-at-shopify-declares-ceo-tobi-lutke-in-internal-memo-471211-2025-04-08) declared in an internal memo that "reflexive AI usage is now a baseline expectation," with AI competency becoming part of performance reviews and hiring decisions. [Coinbase's CEO Brian Armstrong](https://techcrunch.com/2025/08/22/coinbase-ceo-explains-why-he-fired-engineers-who-didnt-try-ai-immediately/) went further and fired engineers who refused to adopt AI tools after giving them a week to onboard. Companies are even tying [AI adoption metrics to executive compensation](https://www.equilar.com/blogs/620-ai-as-a-performance-metric.html). This is quickly becoming the reality of corporate software development "ways of work," not something up for discussion.
 
-A side note on the layoffs: the massive waves of tech layoffs happening right now are not caused by AI replacing developers. These cuts stem from over-hiring during the pandemic boom, rising interest rates, and pressure from investors to improve margins. But AI makes for a convenient narrative. Saying "we are investing in AI efficiency" sounds a lot better in a press release than "we hired too many people and need to correct course." Keep that distinction clear. Conflating the two feeds unnecessary panic about the profession disappearing when the reality is far more mundane.
-
-That said, we should not throw the baby out with the bathwater.
+That said, we should not throw the baby out with the bathwater.<sup><a href="#fn1" id="ref1">1</a></sup>
 
 <img src="/assets/imgs/throw-away-bath-water.jpg" alt="Don't throw the baby out with the bathwater" style="max-width: 50%; display: block; margin: 0 auto;" />
 
 The fundamentals, understanding systems, writing clean interfaces, reasoning about failure modes, knowing how to debug, are what make AI-assisted development actually work. Without them, you are just generating code you cannot evaluate. The tooling is only as good as the person directing it.
 
 The real question is not whether vibe coding is "legitimate" programming. It is whether you are willing to adapt, the way you always have. New tools, new constraints, new ways of working. The constant is not the tool. It is the developer's ability to learn, adjust, and keep building.
+
+---
+
+<p id="fn1"><sup>1</sup> A side note on the layoffs: the massive waves of tech layoffs happening right now are not caused by AI replacing developers. These cuts stem from over-hiring during the pandemic boom, rising interest rates, and pressure from investors to improve margins. But AI makes for a convenient narrative. Saying "we are investing in AI efficiency" sounds a lot better in a press release than "we hired too many people and need to correct course." Keep that distinction clear. Conflating the two feeds unnecessary panic about the profession disappearing when the reality is far more mundane. <a href="#ref1">↩</a></p>
