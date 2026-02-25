@@ -4,7 +4,7 @@ title: "Vibe Coding and the Need to Adapt"
 permalink: /vibe-coding/
 date: 2026-02-24 14:00:00 -0300
 categories: ["career", "software-engineering"]
-tags: ["vibe-coding", "ai", "developer-productivity", "career"]
+tags: ["vibe-coding", "ai", "developer-productivity", "career", "software-engineering"]
 ---
 
 The term "vibe coding" has been floating around developer circles for a while now. Coined by [Andrej Karpathy](https://x.com/karpathy/status/1886192184808149383) in early 2025, it describes the practice of writing software almost entirely through natural language prompts to AI tools, where you "fully give in to the vibes" and let the LLM generate the code. You describe what you want, the AI produces it, you run it, and if something breaks, you paste the error back and ask it to fix it. The code itself becomes secondary to the intent.
