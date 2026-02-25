@@ -25,9 +25,11 @@ This is not a fringe experiment. The biggest companies in tech have embraced AI-
 
 [Uber](https://www.uber.com/blog/the-transformative-power-of-generative-ai/) has taken a particularly systematic approach. They built [uReview](https://www.uber.com/blog/ureview/), an AI-powered code review system that catches bugs, security vulnerabilities, and coding standard violations. Their Autocover tool generates test cases automatically and has saved an estimated [21,000 developer hours](https://medium.com/@_jaydeepkarale/how-uber-built-an-ai-agent-that-saved-21000-developer-hours-382c40776f3b) by increasing test coverage across their platform. They even ran a company-wide hackathon with over 700 engineers focused entirely on generative AI applications for developer productivity.
 
-[Stripe](https://stripe.com/blog/how-we-built-stripe-minions) has gone even further with their internal "minions" system: over 1,300 pull requests merged per week that are entirely AI-produced with zero human-written code, only human review.
+[Stripe](https://stripe.com/blog/how-we-built-stripe-minions) has gone even further with their internal "minions" system: over 1,300 pull requests merged per week that are entirely AI-produced with zero human-written code, only human review. This is not some low-stakes SaaS product. Stripe processed $1.9 trillion in total payment volume in 2025, roughly 1.6% of global GDP. Their codebase is mission-critical financial infrastructure, and they are still confident enough in AI-assisted development to ship it at this scale.
 
+<div style="display: flex; justify-content: center;">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Over 1,300 Stripe pull requests merged each week are completely minion-produced, human-reviewed, but contain no human-written code (up from 1,000 last week).<br><br>How we built minions: <a href="https://t.co/GazfpFU6L4">https://t.co/GazfpFU6L4</a>. <a href="https://t.co/MJRBkxtfIw">pic.twitter.com/MJRBkxtfIw</a></p>&mdash; Stripe (@stripe) <a href="https://twitter.com/stripe/status/2024574740417970462?ref_src=twsrc%5Etfw">February 19, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 These are not startups experimenting with a trend. These are companies operating massive codebases with thousands of engineers, and they have decided that AI-assisted development is how software gets built now.
 
