@@ -8,6 +8,10 @@ github_username:  victorl2
 # Build settings
 theme: minima
 
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
 header_pages:
   - _pages/about.md
 
